@@ -10,7 +10,9 @@ import Combine
 
 
 final class ModelData: ObservableObject {
-    @Published var hotels: [Hotel] = [
+    @Published var hotels: [Hotel] = load("hotelData.json")
+}
+    /*[
         Hotel(
             id:001,
               name: "Shangri-La Sydney",
@@ -98,5 +100,29 @@ final class ModelData: ObservableObject {
              coordinates: Hotel.Coordinates(latitude:-33.93198166144756, longitude:151.18729002714153)
         )
     ]
- 
+ */
+
+
+
+
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
 }

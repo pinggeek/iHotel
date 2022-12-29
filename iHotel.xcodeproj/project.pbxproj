@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		842001D62955A3A300464DA0 /* FilterSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842001D52955A3A300464DA0 /* FilterSearchView.swift */; };
-		8436D5C6295D08A5001C69B6 /* hotelData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8436D5C5295D08A5001C69B6 /* hotelData.json */; };
+		8436D5CA295D0949001C69B6 /* hotelData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8436D5C9295D0949001C69B6 /* hotelData.json */; };
 		8470F59D2955FF8600A15C7C /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470F59C2955FF8600A15C7C /* FavoriteButton.swift */; };
 		8470F59F2956820800A15C7C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470F59E2956820800A15C7C /* MapView.swift */; };
 		8470F5A12956BCE200A15C7C /* CheckboxField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470F5A02956BCE200A15C7C /* CheckboxField.swift */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		842001D52955A3A300464DA0 /* FilterSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSearchView.swift; sourceTree = "<group>"; };
-		8436D5C5295D08A5001C69B6 /* hotelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotelData.json; sourceTree = "<group>"; };
+		8436D5C9295D0949001C69B6 /* hotelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotelData.json; sourceTree = "<group>"; };
 		8470F59C2955FF8600A15C7C /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		8470F59E2956820800A15C7C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8470F5A02956BCE200A15C7C /* CheckboxField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxField.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		842001D229559B5700464DA0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8436D5C5295D08A5001C69B6 /* hotelData.json */,
+				8436D5C9295D0949001C69B6 /* hotelData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8436D5C6295D08A5001C69B6 /* hotelData.json in Resources */,
+				8436D5CA295D0949001C69B6 /* hotelData.json in Resources */,
 				84AD5A412955116400CAE2C3 /* Preview Assets.xcassets in Resources */,
 				84AD5A3E2955116400CAE2C3 /* Assets.xcassets in Resources */,
 			);
